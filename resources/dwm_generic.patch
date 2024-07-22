@@ -1,0 +1,43 @@
+diff --git a/config.h b/config.h
+index df9481c..4f7c750 100644
+--- a/config.h
++++ b/config.h
+@@ -38,9 +38,6 @@ static const char *colors[][3]      = {
+ };
+ 
+ static const char *const autostart[] = {
+-	// NVIDIA settings
+-	"nvidia-settings", "-a", "'[gpu:0]/GPUPowerMizerMode=1'", NULL,
+-	"nvidia-settings", "--load-config-only", NULL,
+ 	// Composing
+ 	"xcompmgr", NULL,
+ 	// Notification manager
+@@ -51,8 +48,6 @@ static const char *const autostart[] = {
+ 	"blueman-applet", NULL,
+ 	// Nitrogen
+ 	"nitrogen", "--restore", NULL,
+-	// Xwinter
+-	"xwinter", "-c", "25", NULL,
+ 
+ 	NULL /* terminate */
+ };
+@@ -113,9 +108,7 @@ static const char *brgdown[]   = { "xbacklight", "-dec", "10", NULL};
+ static const char *playpause[] = { "playerctl", "play-pause", NULL};
+ static const char *next[]      = { "playerctl", "next", NULL};
+ static const char *prev[]      = { "playerctl", "previous", NULL};
+-static const char *todp[]      = {"/home/shadoww/.local/bin/setinput-dp.sh", NULL};
+-static const char *tohdmi[]      = {"/home/shadoww/.local/bin/setinput-hdmi.sh", NULL};
+-static const char *changeoutput[] ={"/home/shadoww/.local/bin/change-output.py", NULL};
++static const char *changeoutput[] ={"change-output.py", NULL};
+ 
+ static Key keys[] = {
+ 	/* modifier                     key        function        argument */
+@@ -163,8 +156,6 @@ static Key keys[] = {
+ 	{ 0,             XF86XK_AudioPlay,         spawn,          {.v = playpause } },
+ 	{ 0,             XF86XK_AudioNext,         spawn,          {.v = next } },
+ 	{ 0,             XF86XK_AudioPrev,         spawn,          {.v = prev } },
+-	{ MODKEY|ShiftMask,             XK_F1,     spawn,          {.v = todp } },
+-	{ MODKEY|ShiftMask,             XK_F2,     spawn,          {.v = tohdmi } },
+ 	{ MODKEY|ShiftMask,             XK_F3,     spawn,          {.v = changeoutput } },
+ };
+ 

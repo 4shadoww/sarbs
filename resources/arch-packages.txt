@@ -1,0 +1,47 @@
+# Essential desktop
+xorg
+xorg-xinit
+zsh
+rofi
+xfce4-notifyd
+nitrogen
+xcompmgr
+feh
+slock
+
+# Themes
+arc-gtk-theme
+breeze-gtk
+
+# Desktop utils
+arandr
+mpv
+ranger
+thunar
+playerctl
+# For slstatus
+network-manager-applet
+volumeicon
+
+# Audio
+pipewire
+lib32-pipewire
+pipewire-pulse
+pipewire-alsa
+wireplumber
+
+# Fonts
+ttf-dejavu
+adobe-source-code-pro-fonts
+ttf-fira-code
+ttf-font-awesome
+ttf-liberation
+ttf-roboto
+ttf-roboto-mono
+
+# Development
+gcc
+python
+vim
+neovim
+curl
