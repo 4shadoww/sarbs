@@ -72,7 +72,6 @@ ZSH_THEME="shadow"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	adb
 	colorize
 	command-not-found
 	dirhistory
