@@ -1,5 +1,5 @@
 diff --git a/config.h b/config.h
-index df9481c..4f7c750 100644
+index b6cfdd6..b492188 100644
 --- a/config.h
 +++ b/config.h
 @@ -38,9 +38,6 @@ static const char *colors[][3]      = {
@@ -18,10 +18,10 @@ index df9481c..4f7c750 100644
  	"nitrogen", "--restore", NULL,
 -	// Xwinter
 -	"xwinter", "-c", "25", NULL,
+     // Caps to escape
+     "setxkbmap", "-option", "caps:escape", NULL,
  
- 	NULL /* terminate */
- };
-@@ -113,9 +108,7 @@ static const char *brgdown[]   = { "xbacklight", "-dec", "10", NULL};
+@@ -115,9 +110,7 @@ static const char *brgdown[]   = { "xbacklight", "-dec", "10", NULL};
  static const char *playpause[] = { "playerctl", "play-pause", NULL};
  static const char *next[]      = { "playerctl", "next", NULL};
  static const char *prev[]      = { "playerctl", "previous", NULL};
@@ -32,7 +32,7 @@ index df9481c..4f7c750 100644
  
  static Key keys[] = {
  	/* modifier                     key        function        argument */
-@@ -163,8 +156,6 @@ static Key keys[] = {
+@@ -165,8 +158,6 @@ static Key keys[] = {
  	{ 0,             XF86XK_AudioPlay,         spawn,          {.v = playpause } },
  	{ 0,             XF86XK_AudioNext,         spawn,          {.v = next } },
  	{ 0,             XF86XK_AudioPrev,         spawn,          {.v = prev } },

@@ -4,14 +4,16 @@ xorg-xinit
 zsh
 rofi
 xfce4-notifyd
-nitrogen
+# nitrogen (on AUR)
 xcompmgr
 feh
 slock
+xclip
 
 # Themes
-arc-gtk-theme
+adw-gtk-theme
 breeze-gtk
+papirus-icon-theme
 
 # Desktop utils
 arandr
@@ -21,7 +23,7 @@ thunar
 playerctl
 # For slstatus
 network-manager-applet
-volumeicon
+pasystray
 
 # Audio
 pipewire
@@ -45,3 +47,6 @@ python
 vim
 neovim
 curl
+unzip
+npm
+ripgrep
