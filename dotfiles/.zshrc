@@ -112,3 +112,21 @@ VI_MODE_SET_CURSOR=true
 DISABLE_AUTO_UPDATE=true
 alias cppman="cppman --force-columns=140"
 export PATH="/home/shadoww/.emacs.d/bin:$PATH"
+
+sw() {
+  local target
+  if [ -z "$1" ]; then
+    # Interactive selection using fzf
+    target=$(git worktree list | fzf --height 40% --reverse --info=inline | awk '{print $1}')
+  else
+    # Match the argument against the list of worktree paths
+    target=$(git worktree list | grep "$1" | head -n 1 | awk '{print $1}')
+  fi
+
+  if [ -n "$target" ]; then
+    cd "$target"
+  else
+    echo "Worktree not found."
+    return 1
+  fi
+}
