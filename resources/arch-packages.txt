@@ -20,6 +20,9 @@ arandr
 mpv
 ranger
 thunar
+gvfs
+thunar-volman
+udisks2
 playerctl
 # For slstatus
 network-manager-applet
