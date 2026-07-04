@@ -54,3 +54,4 @@ curl
 unzip
 npm
 ripgrep
+difftastic
