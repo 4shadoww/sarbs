@@ -1,6 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+DISABLE_AUTO_UPDATE=true
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -109,7 +110,6 @@ VI_MODE_SET_CURSOR=true
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-DISABLE_AUTO_UPDATE=true
 alias cppman="cppman --force-columns=140"
 export PATH="/home/shadoww/.emacs.d/bin:$PATH"
 
