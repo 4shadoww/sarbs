@@ -1,3 +1,4 @@
 # Install these manually
 gnome-themes-extra-gtk2
 nitrogen
+emote
