@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-DISABLE_AUTO_UPDATE=true
+export COLORTERM=truecolor
 # Path to your oh-my-zsh installation.
+DISABLE_AUTO_UPDATE=true
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -111,7 +111,12 @@ VI_MODE_SET_CURSOR=true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cppman="cppman --force-columns=140"
-export PATH="/home/shadoww/.emacs.d/bin:$PATH"
+alias nvim-dev="NVIM_APPNAME=lazyvim-dev nvim"
+export PATH="$HOME/.emacs.d/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+export JC_HOME_TOOLS=$HOME/JavaCard/Oracle/tools
+export JC_HOME_SIMULATOR=$HOME/JavaCard/Oracle/simulator
 
 sw() {
   local target
